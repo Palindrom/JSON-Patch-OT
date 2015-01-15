@@ -121,9 +121,14 @@
     };
     function replacePathIfHigher(path, repl, index){
       var result = path.substr(repl.length);
-      var match = result.match(/^(\d+)(.*)/);
-      if(match && match[1] > index){
-        return repl + (match[1] - index) + match[2];
+      // var match = result.match(/^(\d+)(.*)/);
+      // if(match && match[1] > index){
+      var eoindex = result.indexOf("/");
+      eoindex > -1 || (eoindex = result.length);
+      var oldIndex = result.substr(0, eoindex);
+      var rest  = result.substr(eoindex);
+      if(isValidIndex(oldIndex) && oldIndex > index){
+        return repl + (oldIndex -1) + rest;
       } else {
         return path;
       }
