@@ -1,5 +1,5 @@
 {
-  "name": "json-patch-ot-agent",
+  "name": "json-patch-ot",
   "version": "0.0.0",
   "description": "JSON Patch Operational Transformations - resolves outdated JSON Patches (RFC6902) in real-time JSON collaboration",
   "main": "src/json-patch-ot.js",
