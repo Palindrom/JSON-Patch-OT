@@ -43,3 +43,9 @@ For detailed changelog, check [Releases](https://github.com/PuppetJs/JSON-Patch-
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
+
+## See also
+- [fast JSON Patch](https://github.com/Starcounter-Jack/JSON-Patch)
+- [JSON Patch Queue](https://github.com/PuppetJs/JSON-Patch-Queue)
+- [JSON Patch OT](https://github.com/PuppetJs/JSON-Patch-OT)
+- ...putting it all together: [PuppetJs](https://github.com/PuppetJs/PuppetJs)
