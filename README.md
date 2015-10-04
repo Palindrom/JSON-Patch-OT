@@ -22,11 +22,11 @@ Or [download as ZIP](https://github.com/PuppetJs/JSON-Patch-OT/archive/gh-pages.
 
 ## Usage
 
-    ```javascript
-    var transformedPatch = JSONPatchOT.transform( givenPatch, againstAnotherPatch);
-    // or
-    var transformedPatch = JSONPatchOT.transform( givenPatch, againstArrayOfPatches);
-    ```
+```javascript
+var transformedPatch = JSONPatchOT.transform( givenPatch, againstAnotherPatch);
+// or
+var transformedPatch = JSONPatchOT.transform( givenPatch, againstArrayOfPatches);
+```
 
 ## Contributing
 
