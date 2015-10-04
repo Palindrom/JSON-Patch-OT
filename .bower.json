@@ -19,7 +19,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "gruntfile.js"
   ],
   "devDependencies": {
     "fast-json-patch": "~0.5.0",

@@ -23,6 +23,23 @@ module.exports = function(grunt) {
         ]
       }
     },
-  });    
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        commit: true,
+        commitMessage: '%VERSION%',
+        commitFiles: ['package.json', 'bower.json'],
+        createTag: true,
+        tagName: '%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: false,
+        // pushTo: 'origin',
+        globalReplace: false,
+        prereleaseName: false,
+        regExp: false
+      }
+    }
+  });
 grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-bump');
 };
