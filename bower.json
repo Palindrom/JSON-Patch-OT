@@ -1,6 +1,6 @@
 {
   "name": "json-patch-ot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/PuppetJs/JSON-Patch-OT",
   "description": "JSON Patch Operational Transformations - resolves outdated JSON Patches (RFC6902) in real-time JSON collaboration",
   "authors": [

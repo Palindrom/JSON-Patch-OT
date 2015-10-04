@@ -1,6 +1,6 @@
 {
   "name": "json-patch-ot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "JSON Patch Operational Transformations - resolves outdated JSON Patches (RFC6902) in real-time JSON collaboration",
   "main": "src/json-patch-ot.js",
   "scripts": {
@@ -28,8 +28,8 @@
     "node": ">= 0.4.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-uglify": "~0.5.0",
-    "grunt-bump": "^0.6.0"
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.6.0",
+    "grunt-contrib-uglify": "~0.5.0"
   }
 }
