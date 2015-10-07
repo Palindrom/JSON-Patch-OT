@@ -1,4 +1,6 @@
 (function(scope){
+  var debug = false;
+
   var JSONPatchOT = scope.JSONPatchOT || {};
   JSONPatchOT.transform = function (sequenceA, sequences) {
     var concatAllSequences = [];
@@ -35,37 +37,37 @@
             if( transformAgainst[operationObj.op][originalOp.op] ){
               transformAgainst[operationObj.op][originalOp.op](operationObj, originalOp)
             } else{
-              console.log("No function to transform " + originalOp.op + "against" + operationObj.op);
+              debug && console.log("No function to transform " + originalOp.op + "against" + operationObj.op);
             }
           }
         }
       } else {
-        console.log("No function to transform against " + operationObj.op)
+        debug && console.log("No function to transform against " + operationObj.op)
       }
       return original;
     };
     var transformAgainst = {
       remove: function(patchOp, original){
-        console.log("Transforming ", JSON.stringify(original) ," against `remove` ", patchOp);
+        debug && console.log("Transforming ", JSON.stringify(original) ," against `remove` ", patchOp);
         var orgOpsLen = original.length, currentOp = 0, originalOp;
         // remove operation objects
         while (originalOp = original[currentOp]) {
 
 
           // TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)
-          console.log("TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)");
+          debug && console.log("TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)");
           if( (originalOp.op === 'add' || originalOp.op === 'test') && patchOp.path === originalOp.path ){
             // do nothing ? (tomalec)
-          } else 
+          } else
           // node in question was removed
-          if( originalOp.from && 
+          if( originalOp.from &&
                   (originalOp.from === patchOp.path || originalOp.from.indexOf(patchOp.path + "/") === 0 ) ||
               ( patchOp.path === originalOp.path || originalOp.path.indexOf(patchOp.path + "/") === 0 ) ){
-            console.log("Removing ", originalOp);
+            debug && console.log("Removing ", originalOp);
             original.splice(currentOp,1);
             orgOpsLen--;
             currentOp--;
-          } 
+          }
           currentOp++;
         }
         // shift indexes
@@ -75,9 +77,9 @@
           var index = patchOp.path.substr(lastSlash+1);
           var arrayPath = patchOp.path.substr(0,lastSlash+1);
           if( isValidIndex(index)){
-            console.warn("Bug prone guessing that, as number given in path, this is an array!");
+            debug && console.warn("Bug prone guessing that, as number given in path, this is an array!");
 
-            console.log("Shifting array indexes");
+            debug && console.log("Shifting array indexes");
             orgOpsLen = original.length;
             currentOp = 0;
             while (currentOp < orgOpsLen) {
@@ -96,27 +98,27 @@
 
       },
       replace: function(patchOp, original){
-        console.log("Transforming ", JSON.stringify(original) ," against `replace` ", patchOp);
+        debug && console.log("Transforming ", JSON.stringify(original) ," against `replace` ", patchOp);
         var currentOp = 0, originalOp;
         // remove operation objects withing replaced JSON node
         while (originalOp = original[currentOp]) {
 
 
           // TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)
-          console.log("TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)");
+          debug && console.log("TODO: `move`, and `copy` (`from`) may not be covered well (tomalec)");
           // node in question was removed
           // IT:
           // if( patchOp.path === originalOp.path || originalOp.path.indexOf(patchOp.path + "/") === 0 ){
-          if( originalOp.from && 
+          if( originalOp.from &&
                   (originalOp.from === patchOp.path || originalOp.from.indexOf(patchOp.path + "/") === 0 ) ||
               originalOp.path.indexOf(patchOp.path + "/") === 0 ){
-            console.log("Removing ", originalOp);
+            debug && console.log("Removing ", originalOp);
             original.splice(currentOp,1);
             currentOp--;
-          } 
+          }
           currentOp++;
         }
-        
+
       }
     };
     function replacePathIfHigher(path, repl, index){
