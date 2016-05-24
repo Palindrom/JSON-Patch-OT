@@ -42,7 +42,7 @@ For detailed changelog, check [Releases](https://github.com/PuppetJs/JSON-Patch-
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+MIT
 
 ## See also
 - [fast JSON Patch](https://github.com/Starcounter-Jack/JSON-Patch)
