@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PuppetJs/JSON-Patch-OT.git"
+    "url": "https://github.com/Palindrom/JSON-Patch-OT.git"
   },
   "keywords": [
     "jsonpatch",
@@ -21,9 +21,9 @@
   "author": "Tomek Wytrebowicz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PuppetJs/JSON-Patch-OT/issues"
+    "url": "https://github.com/Palindrom/JSON-Patch-OT/issues"
   },
-  "homepage": "https://github.com/PuppetJs/JSON-Patch-OT",
+  "homepage": "https://github.com/Palindrom/JSON-Patch-OT",
   "engines": {
     "node": ">= 0.4.0"
   },
