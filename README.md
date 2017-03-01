@@ -18,7 +18,7 @@ Install the component using [Bower](http://bower.io/):
 $ bower install json-patch-ot --save
 ```
 
-Or [download as ZIP](https://github.com/PuppetJs/JSON-Patch-OT/archive/master.zip).
+Or [download as ZIP](https://github.com/Palindrom/JSON-Patch-OT/archive/master.zip).
 
 ## Usage
 
@@ -38,7 +38,7 @@ var transformedPatch = JSONPatchOT.transform( givenPatch, againstArrayOfPatches)
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/PuppetJs/JSON-Patch-OT/releases).
+For detailed changelog, check [Releases](https://github.com/Palindrom/JSON-Patch-OT/releases).
 
 ## License
 
@@ -46,6 +46,6 @@ MIT
 
 ## See also
 - [fast JSON Patch](https://github.com/Starcounter-Jack/JSON-Patch)
-- [JSON Patch Queue](https://github.com/PuppetJs/JSON-Patch-Queue)
-- [JSON Patch OT](https://github.com/PuppetJs/JSON-Patch-OT)
-- ...putting it all together: [PuppetJs](https://github.com/PuppetJs/PuppetJs)
+- [JSON Patch Queue](https://github.com/Palindrom/JSON-Patch-Queue)
+- [JSON Patch OT](https://github.com/Palindrom/JSON-Patch-OT)
+- ...putting it all together: [Palindrom](https://github.com/Palindrom/Palindrom)
