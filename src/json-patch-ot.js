@@ -1,4 +1,6 @@
 (function(scope){
+
+  console.warn('Please use the production version in `dist` folder, this file will be removed soon');
   var debug = false;
 
   var JSONPatchOT = scope.JSONPatchOT || {};
