@@ -1,7 +1,7 @@
 {
   "name": "json-patch-ot",
   "version": "1.0.1",
-  "homepage": "https://github.com/PuppetJs/JSON-Patch-OT",
+  "homepage": "https://github.com/Palindrom/JSON-Patch-OT",
   "description": "JSON Patch Operational Transformations - resolves outdated JSON Patches (RFC6902) in real-time JSON collaboration",
   "authors": [
     "Tomek Wytrebowicz <tomalecpub@gmail.com>"
@@ -21,8 +21,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    "gruntfile.js"
+    "tests"
   ],
   "devDependencies": {
   }
