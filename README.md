@@ -12,6 +12,14 @@ Separated demo will be provided soon.
 
 ## Install
 
+Install the component using NPM
+
+```sh
+$ npm install json-patch-ot --save
+```
+
+Or
+
 Install the component using [Bower](http://bower.io/):
 
 ```sh
