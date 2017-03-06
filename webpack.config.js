@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 module.exports = [
   {
-    entry: "./newsrc/json-patch-ot.js",
+    entry: "./src/json-patch-ot.js",
     output: {
       filename: "dist/json-patch-ot.min.js",
       library: "JSONPatchOT",
@@ -20,7 +20,7 @@ module.exports = [
     ]
   },
   {
-    entry: "./newsrc/json-patch-ot.js",
+    entry: "./src/json-patch-ot.js",
     output: {
       filename: "dist/json-patch-ot.js",
       library: "JSONPatchOT",
