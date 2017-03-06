@@ -4,13 +4,7 @@ dist: trusty
 before_script:
   - npm install
   - 'export PATH=$PWD/node_modules/.bin:$PATH'
-node_js: 4
-addons:
-  firefox: latest
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+node_js: 6
 script:
   - xvfb-run npm test
+  
