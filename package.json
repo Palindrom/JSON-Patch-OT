@@ -5,7 +5,7 @@
   "main": "dist/json-patch-ot.js",
   "typings": "index.d.ts",
   "scripts": {
-    "test": "jasmine-node --matchall --config test/spec/coreSpec.js"
+    "test": "jasmine-node --matchall test/spec/transformSpec.js"
   },
   "repository": {
     "type": "git",
