@@ -1,7 +1,14 @@
-(function(scope){
-  var debug = false;
+/*!
+ * https://github.com/Palindrom/JSONPatchOT
+ * JSON-Patch-OT version: 1.0.1
+ * (c) 2017 Tomek Wytrebowicz
+ * MIT license
+ */
 
-  var JSONPatchOT = scope.JSONPatchOT || {};
+var JSONPatchOT = (function(){
+
+  var debug = false;
+  var JSONPatchOT = JSONPatchOT || {};
   JSONPatchOT.transform = function (sequenceA, sequences) {
     var concatAllSequences = [];
     concatAllSequences = concatAllSequences.concat.apply(concatAllSequences, sequences);
@@ -139,5 +146,11 @@
         var n = ~~Number(str);
         return String(n) === str && n >= 0;
     }
-    scope.JSONPatchOT = JSONPatchOT;
-}(window));
+    return JSONPatchOT;
+}());
+
+if(typeof module !== 'undefined') {
+  module.exports = JSONPatchOT;
+  module.exports.default = JSONPatchOT;
+  module.exports.__esModule = true;
+}
