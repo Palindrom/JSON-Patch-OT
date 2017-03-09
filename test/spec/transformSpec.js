@@ -1,7 +1,7 @@
 var obj;
 
 if(typeof JSONPatchOT === 'undefined') {
-  JSONPatchOT = require('../../dist/json-patch-ot');
+  JSONPatchOT = require('../../src/json-patch-ot');
 }
 describe("JSONPatchOT when `.transform`s", function(){
 

@@ -149,5 +149,8 @@ var JSONPatchOT = (function(){
     return JSONPatchOT;
 }());
 
-module.exports = JSONPatchOT;
-module.exports.default = JSONPatchOT;
+if(typeof module !== 'undefined') {
+  module.exports = JSONPatchOT;
+  module.exports.default = JSONPatchOT;
+  module.exports.__esModule = true;
+}
