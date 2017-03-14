@@ -2,6 +2,8 @@
 
 > Resolves outdated JSON Patches (RFC6902) in real-time JSON collaboration
 
+[![Build Status](https://travis-ci.org/Palindrom/JSON-Patch-OT.svg?branch=master)](https://travis-ci.org/Palindrom/JSON-Patch-OT)
+
 Set of transformations for JSON Patch [Operational Transformations](https://en.wikipedia.org/wiki/Operational_transformation)
 
 ## Demo
