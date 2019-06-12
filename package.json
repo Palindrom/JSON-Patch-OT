@@ -5,7 +5,7 @@
   "main": "src/json-patch-ot.js",
   "typings": "index.d.ts",
   "scripts": {
-    "test": "jasmine-node --matchall test/spec/transformSpec.js"
+    "test": "jasmine test/spec/transformSpec.js"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,9 @@
     "node": ">= 0.4.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-bump": "^0.8.0",
-    "grunt-contrib-uglify": "^2.2.0",
-    "jasmine-node": "^1.14.5"
+    "grunt-contrib-uglify": "^4.0.1",
+    "jasmine": "^3.4.0"
   }
 }

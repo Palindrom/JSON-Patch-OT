@@ -16,6 +16,16 @@ module.exports = function(grunt) {
         prereleaseName: false,
         regExp: false
       }
+    },
+    uglify: {
+      json_patch_ot: { 
+        options: {
+          sourceMap: true
+        },
+        files: {
+          'dist/json-patch-ot.min.js': ['src/json-patch-ot.js']
+        }
+      }
     }
   });
 grunt.loadNpmTasks('grunt-contrib-uglify');
