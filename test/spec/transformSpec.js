@@ -1,8 +1,7 @@
 var obj;
 
-if(typeof JSONPatchOT === 'undefined') {
-  JSONPatchOT = require('../../src/json-patch-ot');
-}
+import { JSONPatchOT } from '../../src/json-patch-ot.js';
+
 describe("JSONPatchOT when `.transform`s", function(){
 
   describe("given JSON Patch sequence, and", function(){
