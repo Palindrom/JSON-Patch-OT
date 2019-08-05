@@ -33,9 +33,11 @@ Or [download as ZIP](https://github.com/Palindrom/JSON-Patch-OT/archive/master.z
 ## Usage
 
 ```javascript
-var transformedPatch = JSONPatchOT.transform( givenPatch, againstAnotherPatch);
+import JSONPatchOT from 'json-patch-ot';
+
+var transformedPatch = JSONPatchOT.transform(givenPatch, againstAnotherPatch);
 // or
-var transformedPatch = JSONPatchOT.transform( givenPatch, againstArrayOfPatches);
+var transformedPatch = JSONPatchOT.transform(givenPatch, againstArrayOfPatches);
 ```
 
 ## Contributing
