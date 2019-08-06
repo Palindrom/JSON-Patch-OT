@@ -1,6 +1,6 @@
 /*!
  * https://github.com/Palindrom/JSONPatchOT
- * JSON-Patch-OT version: 2.0.0
+ * JSON-Patch-OT version: 3.0.0-0
  * (c) 2017 Tomek Wytrebowicz
  * MIT license
  */
